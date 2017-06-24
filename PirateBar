@@ -1,0 +1,58 @@
+questions = { 
+    "strong": "Do ye like yer drinks strong?",
+    "salty": "Do ye like it with a salty tang?",
+    "bitter": "Are ye a lubber who likes it bitter?",
+    "sweet": "Would ye like a bit of sweetness with yer poison?",
+    "fruity": "Are ye one for a fruity finish?",
+}
+
+ingredients = {
+    'strong': ['glug of rum', 'slug of whisky', 'splash of gin'],
+    'salty': ['olive on a stick', 'salt-dusted rim', 'rasher of bacon'],
+    'bitter': ['shake of bitters', 'splash of tonic', 'twist of lemon peel'],
+    'sweet': ['sugar cube', 'spoonful of honey', 'spash of cola'],
+    'fruity': ['slice of orange', 'dash of cassis', 'cherry on top'],
+}
+
+greeting = "Welcome to the Salty Seadog!"
+print(greeting)
+
+def drinkstr():
+    print(questions['strong'.format()])        
+    answer = input()
+    if answer == input('y' or 'yes'): 
+        print("Knew you had a strong stomach!")
+    else:
+        print("Sure, what else ya want?")
+        
+def drinksal():
+    print(questions['salty'.format()]) 
+    answer = input()
+    if answer == input('y' or 'yes'):
+        print("Mug of seawater coming up!")
+    else:
+        print("Sure, what else ya want?")
+        
+def drinkbit():
+    print(questions['bitter'.format()]) 
+    answer = input()
+    if answer == input('y' or 'yes'):
+        print("Somethin' sour ta sip!")
+    else:
+        print("Sure, what else ya want?")
+        
+def drinkswt():
+    print(questions['sweet'.format()]) 
+    answer = input()
+    if answer == input('y' or 'yes'):
+        print("Here's something sweet and not-so-neat!")
+    else:
+        print("Sure, what else ya want?")
+        
+def drinkfrt():
+    print(questions['fruity'.format()]) 
+    answer = input()
+    if answer == input('y' or 'yes'):
+        print("You sure? Alright then...")
+    else:
+        print("Sure, what else ya want?")
