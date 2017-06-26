@@ -83,7 +83,7 @@ print("Welcome to the Salty Seadog!")
 print("We're runnin' a bit short on spirits since the storm sunk our last shipment, we still got what ya want in stock if yer'n interested...")
 
 def dr_question(dr_type, dr_message):
-""" Offers customer the intensity of the drink """
+# Offers customer the intensity of the drink 
     cust_response = {}
     for dr_type in questions:
 	answer = input()
@@ -97,14 +97,14 @@ def dr_question(dr_type, dr_message):
 	    print("Hey! They didn't want a {} !".format(dr_type))
     return cust_response
 
-def dr_composition(dr_ingredient):
-""" Arranges ingredients in drink based on previously selected drink intensity in a random manner """
+def dr_composition(dr_ingredients):
+# Arranges ingredients in drink based on previously selected drink intensity in a random manner
     cust_affirmative = ['y', 'yes']
-    cust_affirmative = cust_affirmative.lower[] #Error encountered in Cloud 9, counted as invalid syntax
+    cust_affirmative = cust_affirmative.lower[] #counted as invalid syntax
     cust_affirmative = cust_affirmative.upper[]
-    cust_response = []
-    for dr_ingredient in ingredients:
-        if dr_ingredient == cust_affirmative:
+    dr_ingredients = []
+    for dr_ingredients in ingredients:
+        if dr_ingredients == cust_affirmative:
             print(random.choice(ingredients))
     return cust_response
     
