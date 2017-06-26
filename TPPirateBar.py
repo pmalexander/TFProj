@@ -110,5 +110,5 @@ if __name__ == '__main__':
     dr_awaiting = input( "Itchin' fer a drink?" ) #Identifies cust_affirmative as undefined variable
     dr_pending = [ 'y' , 'Y', 'yes', 'Yes', 'YES' ] #Identifies dr_type and dr_message, which I later removed, as undefined variable
     while dr_awaiting in dr_pending: #Identifies dr_ingredient as undefined variable
-        dr_question(dr_type, dr_message)
+        dr_question(dr_type)
         dr_composition(dr_ingredients)
