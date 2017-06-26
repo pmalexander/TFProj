@@ -60,7 +60,6 @@ def drinkfrt():
 print("Sure, what else ya want?")
 
 ### TPPirateBar.py Ver 2.0 (in need of review) ###
-
 import random
 
 questions = {
@@ -82,10 +81,11 @@ ingredients = {
 print("Welcome to the Salty Seadog!")
 print("We're runnin' a bit short on spirits since the storm sunk our last shipment, we still got what ya want in stock if yer'n interested...")
 
-def dr_question(dr_type, dr_message):
+def dr_question(dr_type):
 # Offers customer the intensity of the drink 
     cust_response = {}
     for dr_type in questions:
+        print(questions[dr_type])
 	answer = input()
 	answer = answer.lower()
 	answer = answer.upper()
@@ -99,16 +99,16 @@ def dr_question(dr_type, dr_message):
 
 def dr_composition(dr_ingredients):
 # Arranges ingredients in drink based on previously selected drink intensity in a random manner
-    cust_affirmative = ['y', 'yes']
-    cust_affirmative = cust_affirmative.lower[] #counted as invalid syntax
-    cust_affirmative = cust_affirmative.upper[]
-    dr_ingredients = []
+    cust_affirmative = ['y', 'Y', 'yes', 'Yes', 'YES']    
+    dr_complete = []
     for dr_ingredients in ingredients:
         if dr_ingredients == cust_affirmative:
             print(random.choice(ingredients))
-    return cust_response
+    return dr_complete
     
 if __name__ == '__main__':
-    while input( "Itchin' for a drink?" ) in [cust_affirmative]:    
+    dr_awaiting = input( "Itchin' fer a drink?" ) #Identifies cust_affirmative as undefined variable
+    dr_pending = [ 'y' , 'Y', 'yes', 'Yes', 'YES' ] #Identifies dr_type and dr_message, which I later removed, as undefined variable
+    while dr_awaiting in dr_pending: #Identifies dr_ingredient as undefined variable
         dr_question(dr_type, dr_message)
-        dr_composition(dr_ingredient)
+        dr_composition(dr_ingredients)
