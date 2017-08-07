@@ -1,3 +1,5 @@
+'''Use as reference only, completed project in ThinkfulProjectsv2 repository'''
+
 ### TPPirateBar.py Ver 1.0 (defunct) ###
 
 questions = { 
